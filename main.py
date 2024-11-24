@@ -6,12 +6,16 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from dotenv import load_dotenv
 from PIL import Image, ImageChops
 import schedule
 import requests
 from requests.exceptions import RequestException
 
 from selenium.webdriver.common.by import By
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Binance new listings URL
 URL = "https://www.binance.com/en/support/announcement/new-cryptocurrency-listing?c=48&navId=48"
