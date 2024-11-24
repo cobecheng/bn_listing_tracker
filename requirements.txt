@@ -1,0 +1,6 @@
+selenium
+pillow
+schedule
+requests
+python-dotenv
+webdriver-manager
