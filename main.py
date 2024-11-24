@@ -15,8 +15,8 @@ from selenium.webdriver.common.by import By
 
 # Binance new listings URL
 URL = "https://www.binance.com/en/support/announcement/new-cryptocurrency-listing?c=48&navId=48"
-TELEGRAM_TOKEN = '8075837546:AAEMLCXM0O-MtQdQl7mVTR9Rs188odKGn-g'
-CHAT_ID = '-4553558741'  # Replace with your group chat ID
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+CHAT_ID = os.getenv('CHAT_ID')
 SCREENSHOTS_DIR = "screenshots"
 
 # Ensure the screenshots directory exists
